@@ -1,0 +1,17 @@
+li {
+  margin: 5px 5px 3px 0;
+}
+
+@font-face {
+    font-family: "Alfa";
+    src: url("../data/alfa.ttf");
+}
+
+h5 {
+  font-family: "Alfa";
+  color:white;
+}
+
+.card{
+  width: 300px;
+}
