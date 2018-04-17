@@ -1,156 +1,163 @@
-#------------------------------------------------------------
+﻿#------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
+
 #------------------------------------------------------------
-# Remplissage : USERS
+# Table: ORDERS
 #------------------------------------------------------------
-INSERT INTO USERS (first_name, name, email, password, status)
- VALUES
-	('Chloé', 'CHEILLAN','chloe.cheillan@viacesi.fr', 'Chllan1','2'),
-('Dylan-Bruce', 'CIMBERT','dylan.cimbert@viacesi.fr', 'Dylbert2','1'),
-('Paul', 'COMBAL','paul.combal@viacesi.fr', 'Paumbal3','3'),
-('Michaël', 'DESTEUQUE','michael.desteuque@viacesi.fr', 'Micsteuque4','3'),
-('Ghislain', 'GLORIA','ghislain.gloria@viacesi.fr', 'Ghiria5','2'),
-('Zakari', 'HAMSIOU','zakari.hamsiou@viacesi.fr', 'Zaksiou6','3'),
-('Benjamin', 'HENRY','benjamin.henry@viacesi.fr', 'Benhenry7','2'),
-('Mor-Niass', 'MBOW','mor.mbow@viacesi.fr', 'Mmbow8','1'),	
-('Corentin', 'RAGENEAU','corentin.rageneau@viacesi.fr', 'Coreneau9','1'),
-	('Aaron', 'SEBAGH','aaronhai.sebagh@viacesi.fr', 'Aarbagh10','3'),
-('Dorian', 'THERIEZ','dorian.theriez@viacesi.fr', 'Doriez11','2'),
-	('Tejesh', 'TAILOR','tejesh.tailor@viacesi.fr', 'Tejailor12','1') ;
+
+CREATE TABLE ORDERS(
+        id_orders       int (11) Auto_increment  NOT NULL ,
+        total_price     Int NOT NULL ,
+        delivery_status Varchar (25) ,
+        date_order      Date ,
+        id_users        Int NOT NULL ,
+        PRIMARY KEY (id_orders )
+)ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Remplissage : ACTIVITY
+# Table: USERS
 #------------------------------------------------------------
 
-INSERT INTO ACTIVITY (activity_name, description_text, activity_date, id_users)
- VALUES
-	('PAINTBALL', 'FORTNITE style because it’s awesome!!!!','2018-04-27 13:00:00','4'),
-	('CS GO LAN', 'Its PAUL POOL time !!!', '2018-04-27 14:00:00','1'),
-	('Cinéma', 'Avengers : INFINITY WAR at UGC CHÂTELET', '2018-04-27 15:00:00','5'),
-	('HANGOVER', 'At le Pavillon :) :) :)', '2018-04-21 18:00:00','7') ;
-
-#------------------------------------------------------------
-# Remplissage : EVENTS
-#------------------------------------------------------------
-
-INSERT INTO EVENTS (event_name, detail_text, abstract, event_date)
- VALUES
-('Football', 'Football/Soccer tournament with 8 teams from every formations. Halla CESI<3<3<3<3 ', 'Football/Soccer tournament', '2018-05-03 14:00:00'),
-('Thursday’s Movie Afternoon', 'At UGC CHÂTELET, AVENGERS – INFINITY WAR : Infinity Stones Quest is over !!! Come to see one of the last chapter of your favorite MCU’s character and the blockbuster of this year. ', 'At UGC CHÂTELET, AVENGERS – INFINITY WAR','2018-04-27 13:00:00'),
-('RELAX AND DRINK…AFTERWORK', ' HAPPY HOUR : 6PM-9PM and don’t forget PAUL POOL time 8PM!!! At the Pavillon', ' Afterwork at the Pavillon' ,'2018-04-27 14:00:00');
-
-#------------------------------------------------------------
-# Remplissage : PICTURES
-#------------------------------------------------------------
-
-INSERT INTO PICTURES (picture, uploading_date, id_event)
- VALUES
-	('event1_1.jpg','2018-04-27 15:00:50', '1'),
-	('event1_2.jpg','2018-04-27 15:30:17', '1'),
-	('event1_3.jpg','2018-05-03 15:45:28', '1');
-
-#------------------------------------------------------------
-# Remplissage : STORE
-#------------------------------------------------------------
-
-INSERT INTO STORE (product_name, price, notice, product_picture, quantity, size)
- VALUES
-('BDE CESI T-shirt','15', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct1.jpg', '350', 'XS/S/M/L/XL/2XL'),
-('BDE CESI Academic’s Kit','25', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct2.jpg', '350', ''),
-('BDE CESI Sweat-Shirt','35', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct3.jpg', '350', 'XS/S/M/L/XL/2XL'),
-('BDE CESI American’s College Coat','45', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct4.jpg', '350', 'XS/S/M/L/XL/2XL'),
-('BDE CESI Bonnet','25', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct5.jpg', '350', 'S/M/L'),
-('BDE CESI Gloves','15', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct6.jpg', '350', 'S/M/L/XL'),
-('BDE CESI Scarf','20', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct7.jpg', '350', 'S/M/L/XL'),
-('BDE CESI Winter Coat','40', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct8.jpg', '350', ''),
-('CESI GAMING MOUSE','30', 'A very useful «gaming mouse » resolution : 500-2000 dpi with 13 buttons + scroll button', 'CESIGAMING1.jpg', '350', ''),
-('CESI GAMING KEYBOARD','35', 'A backlight keyboard (AZERTY) ', 'CESIGAMING2.jpg', '350', ''),
-('CESI GAMING HEADPHONES','50', 'A bluetooth headphones STEREO 5.1','CESIGAMING3.jpg', '350', ''),
-('CESI GAMING MOUSE PAD','10', 'A Large Mousepad (50x40)', 'CESIGAMING4.jpg', '350', '');
-#------------------------------------------------------------
-# Remplissage : COMMENTARIES
-#------------------------------------------------------------
-
-INSERT INTO COMMENTARIES (comment_text, comment_date, id_users, id_picture)
- VALUES
-	('Thanks guys for your participation it was a really good to play with all of you. My team is the best :p :p :p','2018-04-27 15:00:50', '12', '1'),
-	('Tejesh, U Suck man !!!','2018-04-27 15:30:17', '2', '1'),
-	('Yes, Dylan, I suck so much that we beat your team 4-0 during the tournament. Maybe, your team will have more chances on FIFA','2018-05-03 15:45:28', '12', '1');
-
-#------------------------------------------------------------
-# Remplissage : ORDERS
-#------------------------------------------------------------
-
-INSERT INTO ORDERS (total_price, delivery_status, date_order, id_users)
- VALUES
-('125', 'Available', '2018-04-19 14:00:00', '2'),
-('60', 'In Process', '2018-04-24 12:00:00', '1'),
-('70', 'In Process', '2018-04-24 12:00:00', '8') ;
-
-#------------------------------------------------------------
-# Remplissage : ORDERS_CONTENT
-#------------------------------------------------------------
-
-INSERT INTO ORDERS_CONTENT (amount, order_size, id_orders, id_store)
- VALUES
-('1', 'S', '1', '5'),
-('1', 'S', '1', '6'),
-('1', 'S', '1', '7'),
-('1', '', '2', '9'),
-('1', '', '2', '10'),
-('1', '', '2', '11'),
-('1', '', '2', '12'),
-('1', 'L', '3', '4'),
-('1', 'M', '3', '5') ;
-
-#------------------------------------------------------------
-# Remplissage : ELECTION
-#------------------------------------------------------------
-
-INSERT INTO ELECTION (vote, id_activity, id_users)
- VALUES
-('1', '3', '2'),
-('1', '3', '4'),
-('1', '3', '5'),
-('1', '3', '6'),
-('1', '3', '7'),
-('1', '3', '8'),
-('1', '3', '9'),
-('1', '3', '11'),
-('1', '4', '1'),
-('1', '4', '2'),
-('1', '4', '3'),
-('1', '4', '4'),
-('1', '4', '5'),
-('1', '4', '6'),
-('1', '4', '7'),
-('1', '4', '9'),
-('1', '4', '10'),
-('1', '4', '11') ;
+CREATE TABLE USERS(
+        id_users   int (11) Auto_increment  NOT NULL ,
+        first_name Varchar (50) NOT NULL ,
+        name       Varchar (50) NOT NULL ,
+        email      Varchar (50) NOT NULL ,
+        user_name  Varchar (50) NOT NULL ,
+        password   Varchar (25) NOT NULL ,
+        status     Int NOT NULL ,
+        PRIMARY KEY (id_users )
+)ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Remplissage : LIKE_BUTTON
+# Table: PICTURES
 #------------------------------------------------------------
 
-INSERT INTO LIKE_BUTTON (click_like, id_users, id_picture)
- VALUES
-('1', '1', '1'),
-('1', '2', '1'),
-('1', '3', '1'),
-('1', '4', '1'),
-('1', '5', '2'),
-('1', '6', '2'),
-('1', '7', '2'),
-('1', '8', '2'),
-('1', '9', '3'),
-('1', '10', '3'),
-('1', '11', '3'),
-('1', '12', '3') ;
+CREATE TABLE PICTURES(
+        id_picture     int (11) Auto_increment  NOT NULL ,
+        picture        Varchar (50) NOT NULL ,
+        uploading_date Date NOT NULL ,
+        id_event       Int NOT NULL ,
+        PRIMARY KEY (id_picture )
+)ENGINE=InnoDB;
 
 
+#------------------------------------------------------------
+# Table: ACTIVITY
+#------------------------------------------------------------
+
+CREATE TABLE ACTIVITY(
+        id_activity      int (11) Auto_increment  NOT NULL ,
+        activity_name    Varchar (50) NOT NULL ,
+        description_text Varchar (500) NOT NULL ,
+        activity_date    Date NOT NULL ,
+        id_users         Int NOT NULL ,
+        PRIMARY KEY (id_activity )
+)ENGINE=InnoDB;
 
 
+#------------------------------------------------------------
+# Table: COMMENTARIES
+#------------------------------------------------------------
 
+CREATE TABLE COMMENTARIES(
+        id_commentary int (11) Auto_increment  NOT NULL ,
+        comment_text  Varchar (140) NOT NULL ,
+        comment_date  Date NOT NULL ,
+        id_users      Int NOT NULL ,
+        id_picture    Int NOT NULL ,
+        PRIMARY KEY (id_commentary )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: EVENTS
+#------------------------------------------------------------
+
+CREATE TABLE EVENTS(
+        id_event    int (11) Auto_increment  NOT NULL ,
+        event_name  Varchar (50) NOT NULL ,
+        detail_text Varchar (500) NOT NULL ,
+        abstract    Varchar (140) NOT NULL ,
+        event_date  Date NOT NULL ,
+        PRIMARY KEY (id_event )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: STORE
+#------------------------------------------------------------
+
+CREATE TABLE STORE(
+        id_store        int (11) Auto_increment  NOT NULL ,
+        product_name    Varchar (50) NOT NULL ,
+        price           Int NOT NULL ,
+        notice          Varchar (250) NOT NULL ,
+        product_picture Varchar (25) NOT NULL ,
+        quantity        Int ,
+        size            Varchar (25) ,
+        PRIMARY KEY (id_store )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Contrepeterie
+#------------------------------------------------------------
+
+CREATE TABLE Contrepeterie(
+        id_contro    int (11) Auto_increment  NOT NULL ,
+        contropetrie Varchar (140) NOT NULL ,
+        PRIMARY KEY (id_contro )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: ORDERS_CONTENT
+#------------------------------------------------------------
+
+CREATE TABLE ORDERS_CONTENT(
+        amount     Int NOT NULL ,
+        order_size Char (25) ,
+        id_orders  Int NOT NULL ,
+        id_store   Int NOT NULL ,
+        PRIMARY KEY (id_orders ,id_store )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: ELECTION
+#------------------------------------------------------------
+
+CREATE TABLE ELECTION(
+        vote        Bool NOT NULL ,
+        id_activity Int NOT NULL ,
+        id_users    Int NOT NULL ,
+        PRIMARY KEY (id_activity ,id_users )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: LIKE_BUTTON
+#------------------------------------------------------------
+
+CREATE TABLE LIKE_BUTTON(
+        click_like Bool NOT NULL ,
+        id_users   Int NOT NULL ,
+        id_picture Int NOT NULL ,
+        PRIMARY KEY (id_users ,id_picture )
+)ENGINE=InnoDB;
+
+ALTER TABLE ORDERS ADD CONSTRAINT FK_ORDERS_id_users FOREIGN KEY (id_users) REFERENCES USERS(id_users);
+ALTER TABLE PICTURES ADD CONSTRAINT FK_PICTURES_id_event FOREIGN KEY (id_event) REFERENCES EVENTS(id_event);
+ALTER TABLE ACTIVITY ADD CONSTRAINT FK_ACTIVITY_id_users FOREIGN KEY (id_users) REFERENCES USERS(id_users);
+ALTER TABLE COMMENTARIES ADD CONSTRAINT FK_COMMENTARIES_id_users FOREIGN KEY (id_users) REFERENCES USERS(id_users);
+ALTER TABLE COMMENTARIES ADD CONSTRAINT FK_COMMENTARIES_id_picture FOREIGN KEY (id_picture) REFERENCES PICTURES(id_picture);
+ALTER TABLE ORDERS_CONTENT ADD CONSTRAINT FK_ORDERS_CONTENT_id_orders FOREIGN KEY (id_orders) REFERENCES ORDERS(id_orders);
+ALTER TABLE ORDERS_CONTENT ADD CONSTRAINT FK_ORDERS_CONTENT_id_store FOREIGN KEY (id_store) REFERENCES STORE(id_store);
+ALTER TABLE ELECTION ADD CONSTRAINT FK_ELECTION_id_activity FOREIGN KEY (id_activity) REFERENCES ACTIVITY(id_activity);
+ALTER TABLE ELECTION ADD CONSTRAINT FK_ELECTION_id_users FOREIGN KEY (id_users) REFERENCES USERS(id_users);
+ALTER TABLE LIKE_BUTTON ADD CONSTRAINT FK_LIKE_BUTTON_id_users FOREIGN KEY (id_users) REFERENCES USERS(id_users);
+ALTER TABLE LIKE_BUTTON ADD CONSTRAINT FK_LIKE_BUTTON_id_picture FOREIGN KEY (id_picture) REFERENCES PICTURES(id_picture);

@@ -1,23 +1,23 @@
-#------------------------------------------------------------
+﻿#------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
 #------------------------------------------------------------
 # Remplissage : USERS
 #------------------------------------------------------------
-INSERT INTO USERS (first_name, name, email, password, status)
+INSERT INTO USERS (first_name, name, email, user_name, password, status)
  VALUES
-	('Chloé', 'CHEILLAN','chloe.cheillan@viacesi.fr', 'Chllan1','2'),
-('Dylan-Bruce', 'CIMBERT','dylan.cimbert@viacesi.fr', 'Dylbert2','1'),
-('Paul', 'COMBAL','paul.combal@viacesi.fr', 'Paumbal3','3'),
-('Michaël', 'DESTEUQUE','michael.desteuque@viacesi.fr', 'Micsteuque4','3'),
-('Ghislain', 'GLORIA','ghislain.gloria@viacesi.fr', 'Ghiria5','2'),
-('Zakari', 'HAMSIOU','zakari.hamsiou@viacesi.fr', 'Zaksiou6','3'),
-('Benjamin', 'HENRY','benjamin.henry@viacesi.fr', 'Benhenry7','2'),
-('Mor-Niass', 'MBOW','mor.mbow@viacesi.fr', 'Mmbow8','1'),	
-('Corentin', 'RAGENEAU','corentin.rageneau@viacesi.fr', 'Coreneau9','1'),
-	('Aaron', 'SEBAGH','aaronhai.sebagh@viacesi.fr', 'Aarbagh10','3'),
-('Dorian', 'THERIEZ','dorian.theriez@viacesi.fr', 'Doriez11','2'),
-	('Tejesh', 'TAILOR','tejesh.tailor@viacesi.fr', 'Tejailor12','1') ;
+	('Chloé', 'CHEILLAN','chloe.cheillan@viacesi.fr', 'Clochette','Chllan1','2'),
+('Dylan-Bruce', 'CIMBERT','dylan.cimbert@viacesi.fr', 'DylanBC','Dylbert2','1'),
+('Paul', 'COMBAL','paul.combal@viacesi.fr', 'Pablo', 'Paumbal3','3'),
+('Michaël', 'DESTEUQUE','michael.desteuque@viacesi.fr', 'Revuxx','Micsteuque4','3'),
+('Ghislain', 'GLORIA','ghislain.gloria@viacesi.fr', 'Peperoni','Ghiria5','2'),
+('Zakari', 'HAMSIOU','zakari.hamsiou@viacesi.fr', 'Myzoz','Zaksiou6','3'),
+('Benjamin', 'HENRY','benjamin.henry@viacesi.fr', 'Piuff','Benhenry7','2'),
+('Mor-Niass', 'MBOW','mor.mbow@viacesi.fr', 'MBow','Mmbow8','1'),	
+('Corentin', 'RAGENEAU','corentin.rageneau@viacesi.fr', 'Youplaboom','Coreneau9','1'),
+	('Aaron', 'SEBAGH','aaronhai.sebagh@viacesi.fr', 'Loadren','Aarbagh10','3'),
+('Dorian', 'THERIEZ','dorian.theriez@viacesi.fr', 'Dode','Doriez11','2'),
+	('Tejesh', 'TAILOR','tejesh.tailor@viacesi.fr', 'TJS','Tejailor12','1') ;
 
 
 #------------------------------------------------------------
