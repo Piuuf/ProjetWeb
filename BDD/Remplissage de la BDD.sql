@@ -55,20 +55,20 @@ INSERT INTO PICTURES (picture, uploading_date, id_event)
 # Remplissage : STORE
 #------------------------------------------------------------
 
-INSERT INTO STORE (product_name, price, notice, product_picture, quantity, size)
+INSERT INTO STORE (product_name, price, notice, product_picture, category, quantity, size)
  VALUES
-('BDE CESI T-shirt','15', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct1.jpg', '350', 'XS/S/M/L/XL/2XL'),
-('BDE CESI Academic’s Kit','25', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct2.jpg', '350', ''),
-('BDE CESI Sweat-Shirt','35', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct3.jpg', '350', 'XS/S/M/L/XL/2XL'),
-('BDE CESI American’s College Coat','45', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct4.jpg', '350', 'XS/S/M/L/XL/2XL'),
-('BDE CESI Bonnet','25', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct5.jpg', '350', 'S/M/L'),
-('BDE CESI Gloves','15', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct6.jpg', '350', 'S/M/L/XL'),
-('BDE CESI Scarf','20', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct7.jpg', '350', 'S/M/L/XL'),
-('BDE CESI Winter Coat','40', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct8.jpg', '350', ''),
-('CESI GAMING MOUSE','30', 'A very useful «gaming mouse » resolution : 500-2000 dpi with 13 buttons + scroll button', 'CESIGAMING1.jpg', '350', ''),
-('CESI GAMING KEYBOARD','35', 'A backlight keyboard (AZERTY) ', 'CESIGAMING2.jpg', '350', ''),
-('CESI GAMING HEADPHONES','50', 'A bluetooth headphones STEREO 5.1','CESIGAMING3.jpg', '350', ''),
-('CESI GAMING MOUSE PAD','10', 'A Large Mousepad (50x40)', 'CESIGAMING4.jpg', '350', '');
+('BDE CESI T-shirt','15', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct1.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('BDE CESI Academic’s Kit','25', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct2.jpg', 'GOODIES', '350', ''),
+('BDE CESI Sweat-Shirt','35', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct3.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('BDE CESI American’s College Coat','45', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct4.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('BDE CESI Bonnet','25', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct5.jpg', 'CLOTHES', '350', 'S/M/L'),
+('BDE CESI Gloves','15', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct6.jpg', 'CLOTHES', '350', 'S/M/L/XL'),
+('BDE CESI Scarf','20', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct7.jpg', 'CLOTHES', '350', 'S/M/L/XL'),
+('BDE CESI Winter Coat','40', 'Available with every CESI logo’s promotions or with customised logos', 'BDEproduct8.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('CESI GAMING MOUSE','30', 'A very useful «gaming mouse » resolution : 500-2000 dpi with 13 buttons + scroll button', 'CESIGAMING1.jpg', 'GAMING', '350', ''),
+('CESI GAMING KEYBOARD','35', 'A backlight keyboard (AZERTY) ', 'CESIGAMING2.jpg', 'GAMING', '350', ''),
+('CESI GAMING HEADPHONES','50', 'A bluetooth headphones STEREO 5.1','CESIGAMING3.jpg', 'GAMING', '350', ''),
+('CESI GAMING MOUSE PAD','10', 'A Large Mousepad (50x40)', 'CESIGAMING4.jpg', 'GAMING', '350', '');
 #------------------------------------------------------------
 # Remplissage : COMMENTARIES
 #------------------------------------------------------------

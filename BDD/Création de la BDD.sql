@@ -1,7 +1,6 @@
 ﻿#------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
-
 #------------------------------------------------------------
 # Table: ORDERS
 #------------------------------------------------------------
@@ -97,6 +96,7 @@ CREATE TABLE STORE(
         price           Int NOT NULL ,
         notice          Varchar (250) NOT NULL ,
         product_picture Varchar (25) NOT NULL ,
+        category        Varchar (25) NOT NULL ,
         quantity        Int ,
         size            Varchar (25) ,
         PRIMARY KEY (id_store )
