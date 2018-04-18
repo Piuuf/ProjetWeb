@@ -1,6 +1,8 @@
 ﻿#------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
+
+
 #------------------------------------------------------------
 # Table: ORDERS
 #------------------------------------------------------------
@@ -53,6 +55,7 @@ CREATE TABLE ACTIVITY(
         activity_name    Varchar (50) NOT NULL ,
         description_text Varchar (500) NOT NULL ,
         activity_date    Date NOT NULL ,
+        activity_picture Varchar (25) NOT NULL ,
         id_users         Int NOT NULL ,
         PRIMARY KEY (id_activity )
 )ENGINE=InnoDB;

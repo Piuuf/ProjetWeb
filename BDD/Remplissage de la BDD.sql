@@ -24,12 +24,12 @@ INSERT INTO USERS (first_name, name, email, user_name, password, status)
 # Remplissage : ACTIVITY
 #------------------------------------------------------------
 
-INSERT INTO ACTIVITY (activity_name, description_text, activity_date, id_users)
+INSERT INTO ACTIVITY (activity_name, description_text, activity_date, activity_picture, id_users)
  VALUES
-	('PAINTBALL', 'FORTNITE style because it’s awesome!!!!','2018-04-27 13:00:00','4'),
-	('CS GO LAN', 'Its PAUL POOL time !!!', '2018-04-27 14:00:00','1'),
-	('Cinéma', 'Avengers : INFINITY WAR at UGC CHÂTELET', '2018-04-27 15:00:00','5'),
-	('HANGOVER', 'At le Pavillon :) :) :)', '2018-04-21 18:00:00','7') ;
+	('PAINTBALL', 'FORTNITE style because it’s awesome!!!!','2018-04-27 13:00:00', 'activity_1.jpg','4'),
+	('CS GO LAN', 'Its PAUL POOL time !!!', '2018-04-27 14:00:00', 'activity_2.jpg','1'),
+	('Cinéma', 'Avengers : INFINITY WAR at UGC CHÂTELET', '2018-04-27 15:00:00','activity_3.jpg','5'),
+	('HANGOVER', 'At le Pavillon :) :) :)', '2018-04-21 18:00:00', 'activity_4.jpg','7') ;
 
 #------------------------------------------------------------
 # Remplissage : EVENTS
@@ -76,8 +76,8 @@ INSERT INTO STORE (product_name, price, notice, product_picture, category, quant
 INSERT INTO COMMENTARIES (comment_text, comment_date, id_users, id_picture)
  VALUES
 	('Thanks guys for your participation it was a really good to play with all of you. My team is the best :p :p :p','2018-04-27 15:00:50', '12', '1'),
-	('Tejesh, U Suck man !!!','2018-04-27 15:30:17', '2', '1'),
-	('Yes, Dylan, I suck so much that we beat your team 4-0 during the tournament. Maybe, your team will have more chances on FIFA','2018-05-03 15:45:28', '12', '1');
+	('We are the best !!!','2018-04-27 15:30:17', '2', '1'),
+	('How could you say that, we beat your team 4-0 during the tournament. Maybe, you will have more chances on FIFA','2018-05-03 15:45:28', '12', '1');
 
 #------------------------------------------------------------
 # Remplissage : ORDERS
@@ -149,6 +149,7 @@ INSERT INTO LIKE_BUTTON (click_like, id_users, id_picture)
 ('1', '10', '3'),
 ('1', '11', '3'),
 ('1', '12', '3') ;
+
 
 
 
