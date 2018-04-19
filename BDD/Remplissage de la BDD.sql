@@ -68,7 +68,30 @@ INSERT INTO STORE (product_name, price, notice, product_picture, category, quant
 ('CESI GAMING MOUSE','30', 'A very useful «gaming mouse » resolution : 500-2000 dpi with 13 buttons + scroll button', 'CESIGAMING1.jpg', 'GAMING', '350', ''),
 ('CESI GAMING KEYBOARD','35', 'A backlight keyboard (AZERTY) ', 'CESIGAMING2.jpg', 'GAMING', '350', ''),
 ('CESI GAMING HEADPHONES','50', 'A bluetooth headphones STEREO 5.1','CESIGAMING3.jpg', 'GAMING', '350', ''),
-('CESI GAMING MOUSE PAD','10', 'A Large Mousepad (50x40)', 'CESIGAMING4.jpg', 'GAMING', '350', '');
+('CESI GAMING MOUSE PAD','10', 'A Large Mousepad (50x40)', 'CESIGAMING4.jpg', 'GAMING', '350', ''),
+('NICOLAS CAGE T-shirt 1','20', 'A beautiful t-shirt', 'CAGE1.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('NICOLAS CAGE T-shirt 2','20', 'A beautiful t-shirt', 'CAGE2.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('NICOLAS CAGE T-shirt 3','20', 'A beautiful t-shirt', 'CAGE3.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL/2XL'),
+('NICOLAS CAGE LEGGING','25', 'A beautiful Legging', 'CAGE4.jpg', 'CLOTHES', '350', 'XS/S/M/L/XL'),
+('No Man’s Sky','20', 'Adventure on PS4','CESIGAMING5.jpg', 'GAMING', '30', ''),
+('C.O.D : GHOSTS','20', 'FPS on PC','CESIGAMING6.jpg', 'GAMING', '30', ''),
+('Mass Effect Andromeda','20', 'FPS on PS4','CESIGAMING7.jpg', 'GAMING', '30', ''),
+('STAR WARS : BATTLEFRONT II','70', 'PAY TO WIN on PS4','CESIGAMING8.jpg', 'GAMING', '30', ''),
+('CAGE’s Mouse pad','10',' A Large Mousepad (50x40)','CESIGAMING9.jpg', 'GAMING', '30', ''),
+('CAGE’s Poster','10','The best poster in the world.','CAGE5.jpg', 'GOODIES', '300', ''),
+('CAGE’s MUG1','10','The best mug in the world.','CAGE6.jpg', 'MUG', '300', ''),
+('CAGE’s MUG2','10','The best mug in the world.','CAGE7.jpg', 'MUG', '300', ''),
+('CAGE’s MUG3','10','The best mug in the world.','CAGE8.jpg', 'MUG', '300', ''),
+('CAGE’s MUG4','10','The best mug in the world.','CAGE9.jpg', 'MUG', '300', ''),
+('CAGE’s Pillow','10','The best pillow in the world.','CAGE10.jpg', 'GOODIES', '300', ''),
+('CAGE’s DVD Collection','10','The best movies in the history of cinema.','CAGE11.jpg', 'GOODIES', '300', '');
+
+
+
+
+
+
+
 #------------------------------------------------------------
 # Remplissage : COMMENTARIES
 #------------------------------------------------------------
